@@ -1,0 +1,14 @@
+{
+  "name": "CoffeeBone",
+  "version": "0.0.0",
+  "description": "practicing backbone in coffeescript",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "haml": "^0.4.3"
+  }
+}
