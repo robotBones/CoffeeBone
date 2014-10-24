@@ -8,5 +8,5 @@ var url = process.env.URL || 'localhost';
 
 server.listen(port, url);
 
-// NODE_ENV === development is set in package.json "scripts"
+// remove message when in production
 (process.env.NODE_ENV === 'development') && console.log('Started Listening on', url, ':', port, 'at', Date().slice(16,24));
