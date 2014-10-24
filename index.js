@@ -1,12 +1,12 @@
-// This file starts our server, we defer to localhost:8000
-// if a process port and url are not defined.
-
-var app = require('./server/server-config.js');
-
+'use strict';
+// This file is a hook to start the server
+// server files are separated from this so they're portable and testable
+var server = require('./server/server-config.js');
+// we defer to localhost:8000 if a process port and url are not defined.
 var port = process.env.PORT || 8000;
 var url = process.env.URL || 'localhost';
 
-app.listen(port, url);
+server.listen(port, url);
 
-// NODE_ENV is 'development' by default
+// NODE_ENV === development is set in package.json "scripts"
 (process.env.NODE_ENV === 'development') && console.log('Started Listening on', url, ':', port, 'at', Date().slice(16,24));
