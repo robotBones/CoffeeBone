@@ -4,7 +4,7 @@
   "description": "practicing backbone in coffeescript",
   "main": "index.js",
   "scripts": {
-    "start": "NODE_ENV='development' nodemon index.js",
+    "start": "nodemon index.js",
     "test": "test"
   },
   "author": "",
