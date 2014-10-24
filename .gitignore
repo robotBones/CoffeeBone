@@ -1,9 +1,8 @@
+###OSX###
 .DS_Store
 .AppleDouble
 .LSOverride
-node_modules/
-client/lib/vendor/
-./deploy
+Icon
 
 # private
 **/config/
@@ -12,10 +11,33 @@ client/lib/vendor/
 # Icon must ends with two \r.
 Icon
 
-
 # Thumbnails
 ._*
 
 # Files that might appear on external disk
 .Spotlight-V100
 .Trashes
+
+###Node###
+lib-cov
+*.seed
+*.log
+*.csv
+*.dat
+*.out
+*.pid
+*.gz
+
+pids
+logs
+results
+
+npm-debug.log
+node_modules
+
+###Bower###
+client/lib/vendor/
+
+###Compiled###
+./deploy
+./compiled
