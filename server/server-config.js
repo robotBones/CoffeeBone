@@ -8,25 +8,13 @@ var bodyParser    = require('body-parser');
 // express server
 var server = express();
 
-// routers
-var userRouter  = express.Router();
-var videoRouter = express.Router();
-var apiRouter   = express.Router();
-var adminRouter = express.Router();
-
-// configuration
+// configuration / middleware
 server.use(requestLogger('dev'));
 
-// routes
-server.use('/user', userRouter);
-server.use('/video', videoRouter);
-server.use('/api', apiRouter);
-server.use('/admin', adminRouter);
+// import router and pass dependencies
+require('./router/router.js')(server, express);
 
-// catch route redirect
-server.use('/*', function (req,res){
-  res.redirect('/');
-});
+// A catch-all in ./router/router.js will prevent requests falling through here
 
 // required by index.js
 module.exports = server;
