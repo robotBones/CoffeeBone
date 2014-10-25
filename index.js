@@ -9,4 +9,5 @@ var url = process.env.URL || 'localhost';
 server.listen(port, url);
 
 // remove message when in production
+// NODE_ENV seems to no longer have a default value
 (process.env.NODE_ENV === 'development') && console.log('Started Listening on', url, ':', port, 'at', Date().slice(16,24));

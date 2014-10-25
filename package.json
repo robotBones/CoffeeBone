@@ -13,6 +13,8 @@
     "body-parser": "^1.9.1",
     "express": "^4.10.0",
     "haml": "^0.4.3",
-    "morgan": "^1.4.1"
+    "morgan": "^1.4.1",
+    "request": "^2.46.0",
+    "superagent": "^0.20.0"
   }
 }
