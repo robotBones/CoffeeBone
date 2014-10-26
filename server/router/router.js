@@ -1,12 +1,20 @@
 'use strict';
 // required by server-config.js
 module.exports = function(server, express){
+
   // routers
   var indexRouter = express.Router();
   var userRouter  = express.Router();
   var videoRouter = express.Router();
   var apiRouter   = express.Router();
   var adminRouter = express.Router();
+
+  // require routes and pass express router
+  require('./index/indexRoutes.js')(indexRouter);
+  require('./users/userRoutes.js')(userRouter);
+  require('./videos/videoRoutes.js')(videoRouter);
+  require('./apis/apiRoutes.js')(apiRouter);
+  require('./admins/adminRoutes.js')(adminRouter);
 
   // configure express to map resource type to router
   server.use('/', indexRouter);
@@ -20,11 +28,4 @@ module.exports = function(server, express){
     res.redirect('/');
   });
 
-
-  // require routes and pass express router
-  require('./index/indexRoutes.js')(indexRouter);
-  require('./users/userRoutes.js')(userRouter);
-  require('./videos/videoRoutes.js')(videoRouter);
-  require('./apis/apiRoutes.js')(apiRouter);
-  require('./admins/adminRoutes.js')(adminRouter);
 };
