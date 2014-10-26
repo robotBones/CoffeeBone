@@ -14,9 +14,12 @@
     "express": "^4.10.0",
     "haml": "^0.4.3",
     "request": "^2.46.0",
+    "rx": "^2.3.14",
     "superagent": "^0.20.0"
   },
   "devDependencies": {
-    "morgan": "^1.4.1"
+    "mocha": "^2.0.1",
+    "morgan": "^1.4.1",
+    "supertest": "^0.14.0"
   }
 }
