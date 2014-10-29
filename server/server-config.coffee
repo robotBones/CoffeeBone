@@ -8,7 +8,7 @@ viewEngine    = require 'consolidate'
 server = express()
 
 ### configuration ###
-server.engine('haml', viewEngine.haml)
+server.engine 'haml', viewEngine.haml
 
 ### middleware ###
 server.use requestLogger('dev')

@@ -10,11 +10,11 @@ module.exports = (server, express) ->
   adminRouter = express.Router()
 
   # require routes and pass express router
-  require(ROUTER_PATH + '/index/indexRoutes.js')(indexRouter)
-  require(ROUTER_PATH + '/users/userRoutes.js')(userRouter)
-  require(ROUTER_PATH + '/videos/videoRoutes.js')(videoRouter)
-  require(ROUTER_PATH + '/apis/apiRoutes.js')(apiRouter)
-  require(ROUTER_PATH + '/admins/adminRoutes.js')(adminRouter)
+  require(ROUTER_PATH + '/index/indexRoutes.coffee')(indexRouter)
+  require(ROUTER_PATH + '/users/userRoutes.coffee')(userRouter)
+  require(ROUTER_PATH + '/videos/videoRoutes.coffee')(videoRouter)
+  require(ROUTER_PATH + '/apis/apiRoutes.coffee')(apiRouter)
+  require(ROUTER_PATH + '/admins/adminRoutes.coffee')(adminRouter)
 
   # configure express to map resource type to router
   server.use('/', indexRouter);
