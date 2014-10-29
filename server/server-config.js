@@ -14,10 +14,16 @@ server.engine('haml', viewEngine.haml);
 
 // middleware
 server.use(requestLogger('dev'));
-server.use(bodyParser());
+// parse application/x-www-form-urlencoded
+// uses qs library for parsing urlencoded nested arrays and objects
+server.use(bodyParser.urlencoded({extended: true}));
+// parse application/json
+server.use(bodyParser.json());
+// server.use(express.static(APP_ROOT + '/client'));
+
 
 // import router and pass dependencies
-require('./router/router.js')(server, express);
+require(APP_ROOT + '/server/router/router.js')(server, express);
 
 // A catch-all in ./router/router.js
 // will prevent requests falling through here
