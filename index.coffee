@@ -1,9 +1,10 @@
 # This file is a hook to start the server
 # server files are separated from this so they're portable and testable
-path = require 'path'
-global.APP_ROOT = path.resolve __dirname
 
-server = require APP_ROOT +'./server/server-config.js'
+# setting app root path to node.js global namespace
+global.APP_ROOT = __dirname;
+
+server = require APP_ROOT + '/server/server-config.js'
 # we defer to localhost:8000 if a process port and url are not defined.
 url = process.env.PORT or 8000
 port = process.env.URL or 'localhost'

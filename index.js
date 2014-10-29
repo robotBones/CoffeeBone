@@ -1,10 +1,11 @@
 'use strict';
 // This file is a hook to start the server
 // server files are separated from this so they're portable and testable
-var path = require('path');
-global.APP_ROOT = path.resolve(__dirname);
 
-var server = require(APP_ROOT +'/server/server-config.js');
+// setting app root path to node.js global namespace
+global.APP_ROOT = __dirname;
+
+var server = require(APP_ROOT + '/server/server-config.js');
 // we defer to localhost:8000 if a process port and url are not defined.
 var port = process.env.PORT || 8000;
 var url = process.env.URL || 'localhost';
