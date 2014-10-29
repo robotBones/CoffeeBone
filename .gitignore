@@ -39,3 +39,8 @@ client/lib/vendor/
 
 ###Compiled###
 ./deploy
+./public
+
+###Assets###
+./videos
+./avatars
