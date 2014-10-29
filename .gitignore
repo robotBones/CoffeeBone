@@ -38,9 +38,9 @@ node_modules
 client/lib/vendor/
 
 ###Compiled###
-./deploy
-./public
+deploy
+public
 
 ###Assets###
-./videos
-./avatars
+videos
+avatars
