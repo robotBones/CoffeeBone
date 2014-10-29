@@ -18,7 +18,11 @@ server.use bodyParser.urlencoded
   extended: true # uses qs library for parsing urlencoded nested arrays and objects into req.body
 # parse application/json
 server.use bodyParser.json()
-server.use requestLogger('dev')
+# TODO: offload static file serving to a reverse proxy server
+server.use express.static APP_ROOT + '/public'
+server.use express.static APP_ROOT + '/videos'
+server.use express.static APP_ROOT + '/avatars'
+server.use requestLogger 'dev'
 
 ### import router and pass dependencies ###
 require(APP_ROOT + '/server/router/router.coffee')(server, express)
