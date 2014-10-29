@@ -4,7 +4,7 @@
   "authors": [
     "Kim Marquardt <kim.marquardt@gmail.com>"
   ],
-  "description": "practicing coffeescript in backbone",
+  "description": "practicing node and backbone in coffeescript",
   "main": "index.js",
   "license": "MIT",
   "private": true,
