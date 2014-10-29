@@ -1,1 +1,1 @@
-coffee --compile --watch --output compiled .
+coffee --compile --output compiled_coffee .

@@ -2,9 +2,9 @@
   "name": "CoffeeBone",
   "version": "0.0.0",
   "description": "practicing backbone and node in coffeescript",
-  "main": "index.js",
+  "main": "index.coffee",
   "scripts": {
-    "start": "nodemon index.js",
+    "start": "coffee index.coffee",
     "test": "mocha test/test.js"
   },
   "author": "",
@@ -20,7 +20,6 @@
     "superagent": "^0.20.0"
   },
   "devDependencies": {
-    "coffee-script": "^1.8.0",
     "expect.js": "^0.3.1",
     "mocha": "^2.0.1",
     "morgan": "^1.4.1",
