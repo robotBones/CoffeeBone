@@ -1,4 +1,4 @@
-ROUTER_PATH = APP_ROOT + 'server/router'
+ROUTER_PATH = APP_ROOT + '/server/router'
 # required by server-config.js
 module.exports = (server, express) ->
 
@@ -10,11 +10,11 @@ module.exports = (server, express) ->
   adminRouter = express.Router()
 
   # require routes and pass express router
-  require(ROUTER_PATH +'/index/indexRoutes.js')(indexRouter)
-  require(ROUTER_PATH +'/users/userRoutes.js')(userRouter)
-  require(ROUTER_PATH +'/videos/videoRoutes.js')(videoRouter)
-  require(ROUTER_PATH +'/apis/apiRoutes.js')(apiRouter)
-  require(ROUTER_PATH +'/admins/adminRoutes.js')(adminRouter)
+  require(ROUTER_PATH + '/index/indexRoutes.js')(indexRouter)
+  require(ROUTER_PATH + '/users/userRoutes.js')(userRouter)
+  require(ROUTER_PATH + '/videos/videoRoutes.js')(videoRouter)
+  require(ROUTER_PATH + '/apis/apiRoutes.js')(apiRouter)
+  require(ROUTER_PATH + '/admins/adminRoutes.js')(adminRouter)
 
   # configure express to map resource type to router
   server.use('/', indexRouter);
@@ -24,6 +24,5 @@ module.exports = (server, express) ->
   server.use('/admin', adminRouter);
 
   # catch-all route redirect
-  server.use('/*',(req, res) ->
+  server.use '/*', (req, res) ->
     res.redirect '/'
-    )
