@@ -10,11 +10,15 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "async": "^0.9.0",
     "body-parser": "^1.9.1",
+    "bookshelf": "^0.7.9",
     "consolidate": "^0.10.0",
     "express": "^4.10.0",
     "haml": "^0.4.3",
     "memcached": "^2.0.0",
+    "mongoskin": "^1.4.4",
+    "pg": "^3.6.2",
     "request": "^2.46.0",
     "rx": "^2.3.14",
     "superagent": "^0.20.0"
