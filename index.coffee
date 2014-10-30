@@ -4,7 +4,8 @@
 # modules
 colors = require 'colors'
 colorChoices = [
-  'red'
+  'black'
+  'gray'
   'green'
   'yellow'
   'magenta'
