@@ -10,7 +10,8 @@ server = express()
 ### configuration ###
 server.engine 'haml', viewEngine.haml
 server.set 'views', APP_ROOT + 'client/views'
-server.set 'query parser', 'extended' # req.query stores parsed uri query parsed by qs library
+server.set 'query parser', 'extended'         # req.query stores parsed uri query parsed by qs library
+server.disable 'x-powered-by'                 # don't reveal in headers that Express was used.
 
 ### middleware ###
 # parse application/x-www-form-urlencoded

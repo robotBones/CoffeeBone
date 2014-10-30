@@ -12,7 +12,7 @@ STYLES_DEST = 'public/styles'
 # Create your CSS from Sass, Autoprefix it to target 99%
 #  of web browsers, minifies it.
 gulp.task 'css', ->
-  gulp.src 'client/styles/index.sass'
+  gulp.src 'client/styles/index.scss'
     .pipe sass
       errLogToConsole: true
       sourceComments: 'normal' # this is needed to prevent a few types of errors
