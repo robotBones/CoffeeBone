@@ -23,7 +23,40 @@
             "id": 2,
             "name": "Red Raccoon",
             "avatar": "http://localhost:8000/user/2/avatar"
-          },
+          }
+        },
+        {
+          "id": 3,
+          "title": "atmo surfing",
+          "url": "http://localhost:8000/video/3",
+          "rating": 4.0,
+          "uploader": {
+            "id": 3,
+            "name": "Kara El",
+            "avatar": "http://localhost:8000/user/3/avatar"
+          }
+        },
+        {
+          "id": 4,
+          "title": "people particles",
+          "url": "http://localhost:8000/video/4",
+          "rating": 5.0,
+          "uploader": {
+            "id": 4,
+            "name": "Hatter",
+            "avatar": "http://localhost:8000/user/4/avatar"
+          }
+        }
+        {
+          "id": 5,
+          "title": "Cat rain",
+          "url": "http://localhost:8000/video/5",
+          "rating": 2.0,
+          "uploader": {
+            "id": 4,
+            "name": "Hatter",
+            "avatar": "http://localhost:8000/user/4/avatar"
+          }
         }
       ]
     },
@@ -43,7 +76,7 @@
         },
         {
           "id": 4,
-          "title": "Fracture",
+          "title": "people particles",
           "url": "http://localhost:8000/video/4",
           "rating": 5.0,
           "uploader": {
