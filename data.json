@@ -12,7 +12,7 @@
             "id": 1,
             "name": "Mr. Nebula",
             "avatar": "http://localhost:8000/user/1/avatar"
-          },
+          }
         },
         {
           "id": 2,
@@ -46,7 +46,7 @@
             "name": "Hatter",
             "avatar": "http://localhost:8000/user/4/avatar"
           }
-        }
+        },
         {
           "id": 5,
           "title": "Cat rain",
@@ -72,7 +72,7 @@
             "id": 3,
             "name": "Kara El",
             "avatar": "http://localhost:8000/user/3/avatar"
-          },
+          }
         },
         {
           "id": 4,
@@ -83,7 +83,7 @@
             "id": 4,
             "name": "Hatter",
             "avatar": "http://localhost:8000/user/4/avatar"
-          },
+          }
         }
       ]
     }
